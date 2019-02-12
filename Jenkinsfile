@@ -7,7 +7,7 @@ stages {
        git branch: 'master',
        url: 'https://github.com/saichandar94/web.git'
        sh 'ls -l'
-       terraform init
+       sh 'terraform init'
       }
     }
    /* stage('TF Plan'){
