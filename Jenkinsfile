@@ -4,7 +4,7 @@ pipeline {
  stages {
  
  
- stage(‘Provision infrastructure’) {
+ stage(‘Provi’) {
  
  steps {
  dir(‘/’)
