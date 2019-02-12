@@ -6,10 +6,6 @@ pipeline {
           echo "hello"
           }
                 }
-    stage ('two') {
-      steps {
-          echo "second stage"
-            } 
-                  }
+  
 }
 }
