@@ -13,7 +13,7 @@ stages {
       steps {
        echo ("git cloning")
        git branch: 'master',
-       url: 'https://github.com/kishorepamulapati/vpc-setup.git'
+       url: 'https://github.com/saichandar94/web.git'
        sh 'ls -l'
        sh "terraform init"
       }
