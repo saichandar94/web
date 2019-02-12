@@ -16,7 +16,7 @@ stages {
            input message: 'Ready to apply?', ok: 'yes'
         }
     }*/
- tage('TF apply'){
+ stage('TF apply'){
         steps{
            sh "terraform apply"
            input message: 'Ready to apply?', ok: 'yes'
