@@ -2,12 +2,7 @@ pipeline {
  agent any
  
  stages {
- stage(‘checkout’) {
- steps {
- git branch: ‘web’, url: ‘git@saichandar94/web/'
  
- }
- }
  stage(‘Set Terraform path’) {
  steps {
  script {
