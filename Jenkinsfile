@@ -1,10 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage ('Initialize') {
+    stage ('One') {
       steps {
-        echo 'Placeholder.'
+        echo 'Welcome to FIrst stage'
       }
     }
-  }
+    stage('Two'){
+      steps {
+        echo 'second stage'
+      }
+    }
+    }
 }
