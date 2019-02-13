@@ -5,7 +5,8 @@ stages {
       steps {
        echo ("git cloning")
        git branch: 'master',
-       url: 'https://github.com/saichandar94/web.git'
+     //  url: 'https://github.com/saichandar94/web.git'
+       url: 'https://github.com/saichandar94/linkterra.git'
        sh 'ls -l'
        sh 'terraform init'
       }
