@@ -11,12 +11,13 @@ stages {
        sh 'terraform init'
       }
     }
-   /* stage('TF Plan'){
+ stage('TF Plan'){
         steps{
-           sh "terraform plan -var-file=var.tfvars -var az_count=${params.az_count}"
+       sh  "terraform plan -out=tfplan -input=false"
+           //sh "terraform plan -var-file=var.tfvars -var az_count=${params.az_count}"
            input message: 'Ready to apply?', ok: 'yes'
         }
-    }*/
+    }
  stage('TF apply'){
         steps{
            sh "terraform apply"
