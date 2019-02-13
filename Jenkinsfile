@@ -20,7 +20,7 @@ stages {
     }
  stage('TF apply'){
         steps{
-           sh "terraform apply -input=false"
+           sh "terraform apply -input=false tfplan"
            input message: 'Ready to apply?', ok: 'yes'
         }
  }
